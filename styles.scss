@@ -64,17 +64,58 @@ body {
 }
 
 .segment {
+    width: 80vw;
+    margin: 80px 10vw;
+
+    &--grid {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        column-gap: 8vw;
+        grid-template-rows: 20% 80%;
+        row-gap: 2vw;
+    }
+
+    &--flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__image {
         width: 25vw;
         height: auto;
-        margin-left: 5vw;
+        margin-left: 2vw;
+        grid-row: 1 / span 2;
     }
 
     &__text {
         @include text-defaults();
 
-        &--header {
+        &--header-grid {
+            width: 50vw;
             font-size: 2em;
+            align-self: flex-end;
+            margin: 0px;
+        }
+
+        &--body-grid {
+            width: 50vw;
+            font-size: 1em;
+            align-self: flex-start;
+            margin: 0px;
+        }
+
+        &--header-flex {
+            font-size: 2em;
+            text-align: center;
+            margin: 0px;
+        }
+
+        &--body-flex {
+            width: 40vw;
+            font-size: 1em;
+            text-align: center;
+            margin: 0px;
         }
     }
 }
@@ -82,7 +123,6 @@ body {
 .logos {
     display: flex;
     width: 60vw;
-    margin: 0px 20vw;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -105,13 +145,24 @@ body {
     }
 }
 
+.cards {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .card {
     display: flex;
     flex-direction: column;
-    width: 450px;
+    flex-basis: 45%;
+    max-width: 550px;
+    width: minmax(360px, auto);
     height: auto;
+    margin: 0px auto;
 
     &__text {
+        width: auto;
         @include text-defaults();
         &--small {
             size: 0.8em;
@@ -164,7 +215,7 @@ body {
 }
 
 .footer {
-    width: 100vw;
+    width: auto;
     background-color: black;
     display: flex;
     align-items: center;
