@@ -1,0 +1,103 @@
+@mixin text-defaults {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    width: 84vw;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    margin: 48px 8vw;
+
+    &__text {
+        @include text-defaults();
+        font-size: 1em;
+        justify-self: flex-start;
+        margin-left: 10px;
+        margin-right: auto;
+    }
+
+    &__link {
+        @include text-defaults();
+        font-size: 0.8em;
+        color: black;
+        text-decoration: none;
+        margin: 0px 10px;
+    }
+
+    &__button {
+        @include text-defaults();
+        font-size: 1em;
+        height: 45px;
+        width: 145px;
+        margin: 0px 10px;
+        border-radius: 7px;
+        border-width: 1px;
+        border-color: black;
+        background-color: white;
+    }
+}
+
+.header {
+    margin-left: 10vw;
+
+    &__text {
+        @include text-defaults();
+
+        &--small {
+            font-size: 1em;
+        }
+
+        &--big {
+            font-size: 2em;
+        }
+    }
+}
+
+.segment {
+    display: flex;
+
+    &__image {
+        width: 25vw;
+        height: auto;
+    }
+
+    &__text {
+        @include text-defaults();
+
+        &--header {
+            font-size: 2em;
+        }
+    }
+}
+
+.footer {
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 40px 8vw;
+
+    &__email {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        font-size: 1em;
+        margin-right: auto;
+    }
+
+    &__social-media-image {
+        height: 45px;
+        width: 45px;
+        margin: 10px;
+    }
+}
