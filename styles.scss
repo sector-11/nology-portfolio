@@ -33,6 +33,7 @@ body {
     @include mobile() {
         visibility: hidden;
         height: 0px;
+        width: 0px;
         margin: 5vw;
     }
 
@@ -233,9 +234,16 @@ body {
     flex-direction: column;
     flex-basis: 45%;
     max-width: 550px;
-    width: minmax(360px, auto);
     height: auto;
     margin: 0px auto;
+
+    @media screen and (max-width: 360px) {
+        width: auto;
+    }
+
+    @media screen and (min-width: 301px) {
+        width: minmax(360px, auto);
+    }
 
     &__text {
         width: auto;
@@ -293,19 +301,50 @@ body {
 .footer {
     width: auto;
     background-color: black;
-    display: flex;
-    align-items: center;
+    display: grid;
     padding: 40px 8vw;
+
+    @include mobile() {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+
+    @include desktop() {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
 
     &__email {
         color: white;
         font-family: Arial, Helvetica, sans-serif;
         text-decoration: none;
         font-size: 1rem;
-        margin-right: auto;
+        align-self: center;
+
+        @include mobile() {
+            grid-row: 2;
+        }
+
+        @include desktop() {
+            grid-column: 1;
+            margin-right: auto;
+        }
+    }
+}
+
+.social-media {
+    @include mobile() {
+        grid-row: 1;
     }
 
-    &__social-media-image {
+    @include desktop() {
+        justify-self: flex-end;
+        grid-column: 2;
+    }
+
+    &__image {
         height: 45px;
         width: 45px;
         margin: 10px;
