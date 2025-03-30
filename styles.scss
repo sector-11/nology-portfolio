@@ -38,7 +38,7 @@ body {
 
     &__text {
         @include text-defaults();
-        font-size: 1em;
+        font-size: 1rem;
         justify-self: flex-start;
         margin-left: 10px;
         margin-right: auto;
@@ -46,7 +46,7 @@ body {
 
     &__link {
         @include text-defaults();
-        font-size: 0.8em;
+        font-size: 0.8rem;
         color: black;
         text-decoration: none;
         margin: 0px 10px;
@@ -54,7 +54,7 @@ body {
 
     &__button {
         @include text-defaults();
-        font-size: 1em;
+        font-size: 1rem;
         height: 45px;
         width: 145px;
         margin: 0px 10px;
@@ -73,11 +73,11 @@ body {
         width: 80vw;
 
         &--small {
-            font-size: 1em;
+            font-size: 1rem;
         }
 
         &--big {
-            font-size: 2em;
+            font-size: 2rem;
         }
     }
 }
@@ -136,7 +136,7 @@ body {
         @include text-defaults();
 
         &--header-grid {
-            font-size: 2em;
+            font-size: 2rem;
 
             @include mobile() {
                 width: 80vw;
@@ -152,7 +152,7 @@ body {
         }
 
         &--body-grid {
-            font-size: 1em;
+            font-size: 1rem;
 
             @include mobile() {
                 width: 80vw;
@@ -168,13 +168,13 @@ body {
         }
 
         &--header-flex {
-            font-size: 2em;
+            font-size: 2rem;
             text-align: center;
             margin: 0px;
         }
 
         &--body-flex {
-            font-size: 1em;
+            font-size: 1rem;
             text-align: center;
             margin: 20px 0px;
 
@@ -217,7 +217,7 @@ body {
     &__text {
         @include text-defaults();
         text-align: center;
-        size: 0.8em;
+        size: 0.8rem;
     }
 }
 
@@ -241,16 +241,16 @@ body {
         width: auto;
         @include text-defaults();
         &--small {
-            size: 0.8em;
+            size: 0.8rem;
             margin: 10px 0px;
         }
         &--large {
             margin: 5px 0px 10px;
-            size: 2em;
+            size: 2rem;
         }
         &--paragraph {
             margin-top: 20px 0px;
-            size: 1em;
+            size: 1rem;
         }
     }
 
@@ -263,7 +263,7 @@ body {
 
 .button {
     @include text-defaults();
-    font-size: 0.8em;
+    font-size: 0.8rem;
     text-decoration: none;
     display: flex;
     height: 45px;
@@ -301,7 +301,7 @@ body {
         color: white;
         font-family: Arial, Helvetica, sans-serif;
         text-decoration: none;
-        font-size: 1em;
+        font-size: 1rem;
         margin-right: auto;
     }
 
