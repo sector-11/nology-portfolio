@@ -245,6 +245,11 @@ body {
         width: minmax(360px, auto);
     }
 
+    &__image {
+        width: auto;
+        height: auto;
+    }
+
     &__text {
         width: auto;
         @include text-defaults();
