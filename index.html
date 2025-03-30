@@ -12,7 +12,9 @@
             <a class="navbar__link" href="#home">Home</a>
             <a class="navbar__link" href="#about">About</a>
             <a class="navbar__link" href="#projects">Projects</a>
-            <button class="navbar__button">Get in Touch</button>
+            <a class="navbar__button button" href="mailto:p.jude.mcelhone@gmail.com">
+                <p class="button__text button__text--big">Get in Touch</p>
+            </a>
         </nav>
         <header id="home" class="header">
             <h2 class="header__text header__text--small">👋 Hey! I'm Jude</h2>
@@ -28,19 +30,23 @@
             />
             <h1 class="segment__text segment__text--header-grid">About Me</h1>
             <p class="segment__text segment__text--body-grid">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+                My interest in tech started with our first family computer when I was young. I
+                started making programs with some early attempts at making games, and I haven't
+                looked back since. The thing I enjoy most about programming is the problem-solving,
+                getting to know a system and figuring out how to make it do what's needed has the
+                same fun as a good puzzle. I've also got an interest in computer security, after a
+                run in with a particularly flashy trojan as a child (I never did get that free Club
+                Penguin membership). <br /><br />
+                Outside of tech, I'm a keen home cook. It's amazing what you can make with only a
+                few ingredients and some time. This year the big project is growing some purple
+                carrots, to try something I can't get in shops.
             </p>
         </div>
         <div id="skills" class="segment segment--flex">
             <h1 class="segment__text segment__text--header-flex">Technical Skills</h1>
             <p class="segment__text segment__text--body-flex segment__text--center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
+                I have experience working on both front and back-end projects, and have worked on a
+                variety of projects.
             </p>
             <div class="logos">
                 <div class="logo">
@@ -90,6 +96,7 @@
             </div>
         </div>
         <div id="projects" class="segment segment--flex">
+            <h1 class="segment__text segment__text--header-flex">Projects</h1>
             <div class="cards">
                 <div class="card">
                     <img
@@ -97,14 +104,19 @@
                         src="./media/rendezvenue_api.png"
                         alt="Screenshot of API for 'RendezVenue' Android app running."
                     />
-                    <h2 class="card__text card__text--small">Technology</h2>
-                    <h1 class="card__text card__text--large">Project Name</h1>
+                    <h2 class="card__text card__text--small">Spring Boot and PostgreSQL</h2>
+                    <h1 class="card__text card__text--large">RendezVenue API</h1>
                     <p class="card__text card__text--paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
+                        Group project completed as part of Northcoders skills bootcamp. I helped in
+                        the building of a backend API for an Android app in which users could browse
+                        events in their area, polled from the Ticketmaster API, save events to their
+                        calendar, and post new events exclusive to the app. My main contributions in
+                        this were getting and caching data from the Ticketmaster API, transferring
+                        data to the frontend app, and sending data from the frontend to our
+                        database.
                     </p>
                     <div class="card__buttons">
-                        <a href="" class="button">
+                        <a href="https://github.com/Jeneric-Java/RendezVenue-API" class="button">
                             <p class="button__text">Code</p>
                             <img
                                 class="button__image"
@@ -112,7 +124,7 @@
                                 alt="Angle brackets surrounding a forward slash"
                             />
                         </a>
-                        <a href="" class="button">
+                        <a href="https://northcoders.com/project-phase/rendezvenue" class="button">
                             <p class="button__text">View</p>
                             <img class="button__image" src="./media/icons/eye.svg" alt="An eye" />
                         </a>
@@ -124,24 +136,24 @@
                         src="./media/record_shop_api.png"
                         alt="Screenshot of API for 'Record Shop' project running with code snippet."
                     />
-                    <h2 class="card__text card__text--small">Technology</h2>
-                    <h1 class="card__text card__text--large">Project Name</h1>
+                    <h2 class="card__text card__text--small">Spring Boot and PostgreSQL</h2>
+                    <h1 class="card__text card__text--large">Record Shop API</h1>
                     <p class="card__text card__text--paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
+                        A project built to the specifications of a fictional business, to let them
+                        digitise for the first time. This is a RESTful API that interacts with a
+                        Postgres database to store, modify, and retrieve product information. The
+                        source code was built with a layered, MVC architecture to ensure separation
+                        of concerns. I deployed this to AWS with an RDS Postgres database, and an
+                        app hosted on EC2 through Elastic Beanstalk.
                     </p>
                     <div class="card__buttons">
-                        <a href="" class="button">
+                        <a href="https://github.com/sector-11/record-shop-api" class="button">
                             <p class="button__text">Code</p>
                             <img
                                 class="button__image"
                                 src="./media/icons/chevrons.svg"
                                 alt="Angle brackets surrounding a forward slash"
                             />
-                        </a>
-                        <a href="" class="button">
-                            <p class="button__text">View</p>
-                            <img class="button__image" src="./media/icons/eye.svg" alt="An eye" />
                         </a>
                     </div>
                 </div>
